@@ -10,14 +10,14 @@
 <body>
     <section id="card">
         <div id="icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48"><path fill="#37474F" d="M38.5 44.6l-4-4 2.1-2.1 4 4c.6.6.6 1.5 0 2.1l0 0C40.1 45.1 39.1 45.1 38.5 44.6zM9.5 44.6l4-4-2.1-2.1-4 4c-.6.6-.6 1.5 0 2.1l0 0C7.9 45.1 8.9 45.1 9.5 44.6z"/><path fill="#C62828" d="M24 4A20 20 0 1 0 24 44A20 20 0 1 0 24 4Z"/><path fill="#EEE" d="M24 8A16 16 0 1 0 24 40A16 16 0 1 0 24 8Z"/><path fill="#E53935" d="M19 22.1H19.8V35.1H19z" transform="rotate(-134.999 19.404 28.596)"/><path d="M23 11H25V24H23z"/><path d="M26.1 22.7H28.400000000000002V31.9H26.1z" transform="rotate(134.999 27.25 27.25)"/><path d="M24 22A2 2 0 1 0 24 26A2 2 0 1 0 24 22Z"/><path fill="#C62828" d="M24 23A1 1 0 1 0 24 25A1 1 0 1 0 24 23Z"/><path fill="#37474F" d="M22 1H26V4H22z"/><g><path fill="#37474F" d="M44.4 16.2c2.5-3.5 2.1-8.4-1-11.5-3.1-3.1-8-3.5-11.5-1L44.4 16.2zM3.6 16.2c-2.5-3.5-2.1-8.4 1-11.5 3.1-3.1 8-3.5 11.5-1L3.6 16.2z"/></g></svg>
+            <svg width="95px" height="95px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48"><path fill="#37474F" d="M38.5 44.6l-4-4 2.1-2.1 4 4c.6.6.6 1.5 0 2.1l0 0C40.1 45.1 39.1 45.1 38.5 44.6zM9.5 44.6l4-4-2.1-2.1-4 4c-.6.6-.6 1.5 0 2.1l0 0C7.9 45.1 8.9 45.1 9.5 44.6z"/><path fill="#C62828" d="M24 4A20 20 0 1 0 24 44A20 20 0 1 0 24 4Z"/><path fill="#EEE" d="M24 8A16 16 0 1 0 24 40A16 16 0 1 0 24 8Z"/><path fill="#E53935" d="M19 22.1H19.8V35.1H19z" transform="rotate(-134.999 19.404 28.596)"/><path d="M23 11H25V24H23z"/><path d="M26.1 22.7H28.400000000000002V31.9H26.1z" transform="rotate(134.999 27.25 27.25)"/><path d="M24 22A2 2 0 1 0 24 26A2 2 0 1 0 24 22Z"/><path fill="#C62828" d="M24 23A1 1 0 1 0 24 25A1 1 0 1 0 24 23Z"/><path fill="#37474F" d="M22 1H26V4H22z"/><g><path fill="#37474F" d="M44.4 16.2c2.5-3.5 2.1-8.4-1-11.5-3.1-3.1-8-3.5-11.5-1L44.4 16.2zM3.6 16.2c-2.5-3.5-2.1-8.4 1-11.5 3.1-3.1 8-3.5 11.5-1L3.6 16.2z"/></g></svg>
         </div>
         <div id="clock">
             <h2>00:00:00 PM</h2>
         </div>
         <div id="setAlarm">
             <div id="choice">
-                <select name="Hour" id="Hour">
+                <select class="choice" name="Hour" id="Hour">
                     <option value="null">Hour</option>
                     <option value="00">00</option>
                     <option value="01">01</option>
@@ -44,7 +44,7 @@
                     <option value="22">22</option>
                     <option value="23">23</option>
                 </select>
-                <select name="Minutes" id="Minutes">
+                <select class="choice" name="Minutes" id="Minutes">
                     <option value="null">Minute</option>
                     <option value="00">00</option>
                     <option value="01">01</option>
@@ -107,13 +107,13 @@
                     <option value="58">58</option>
                     <option value="59">59</option>
                 </select>
-                <select name="A&P" id="A&P">
+                <select class="choice" name="A&P" id="A&P">
                     <option value="null">AM/PM</option>
                     <option value="AM">AM</option>
                     <option value="PM">PM</option>
                 </select>
             </div>
-            <button id="set">Set Alarm</button>
+            <button id="setbtn">Set Alarm</button>
         </div>
     </section>
     <script src="./js/main.js"></script>

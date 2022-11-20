@@ -10,3 +10,66 @@
 *,*:focus,*:hover{
     outline:none;
 }
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(73, 112, 228);
+}
+
+#card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 400px;
+    height: 350px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    box-shadow: 5px 5px 20px 10px #00000023;
+}
+
+#icon{
+    margin: 11px;
+}
+
+#clock h2{
+    margin: 11px;
+    font-size: 35px;
+}
+
+#setAlarm{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+#setAlarm #choice{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin:11px 0px ;
+}
+
+.choice , #setbtn{
+    width: 120px;
+    height: 50px;
+    margin: 5px;
+    border-radius: 5px;
+    text-align: center;
+    border: 1px solid #3a3a3a5d;
+}
+
+#setbtn{
+    width: 95%;
+    background-color: rgb(73, 112, 228);
+    border: none;
+    color: #ffffff;
+}

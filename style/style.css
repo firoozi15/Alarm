@@ -67,9 +67,72 @@ body{
     border: 1px solid #3a3a3a5d;
 }
 
-#setbtn{
+.okbtn{
     width: 95%;
+    height: 50px;
+    border-radius: 5px;
     background-color: rgb(73, 112, 228);
     border: none;
     color: #ffffff;
+}
+
+#msgback{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    background-color: #3a3a3a94;
+    display: none;
+}
+
+#msgbox{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0px;
+    width: 400px;
+    height: 225px;
+    background-color: #ffffff;
+    position: absolute;
+    border-radius: 15px;
+    transition: 0.5s;
+    border: 5px solid rgb(73, 112, 228);
+}
+
+#audio{
+    opacity: 0;
+}
+
+#iconVib{
+    transform: rotate(-35deg);
+    animation: 2s vib infinite;
+}
+
+@keyframes fadeShow {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@keyframes fadeHide {
+    0%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+@keyframes vib {
+    50%{
+        transform: rotate(+35deg);
+    }
+    100%{
+        transform: rotate(-35deg);
+    }
 }
